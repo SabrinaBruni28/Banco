@@ -64,21 +64,23 @@ void Inicializa(ContaBancaria* conta, Cliente* client,EnderecoCliente* endereco)
 }
 void Imprime(ContaBancaria* conta,Cliente* client,EnderecoCliente* endereco){
     printf("\n");
-    printf("Nome: %s\n",client->nome);
+    printf("*********************************************************\n");
+    printf("Nome: %s",client->nome);
     printf("CPF: %s\n",client->CPF);
     printf("Data de nascimento: %s\n",client->DataNasc);
     printf("\n");
     printf("Endereco:\n");
-    printf("Rua: %s\n",endereco->Rua);
-    printf("Bairro: %s\n",endereco->Bairro);
+    printf("Rua: %s",endereco->Rua);
+    printf("Bairro: %s",endereco->Bairro);
     printf("N: %d\n",endereco->NumeroCasa);
-    printf("Complemento: %s\n",endereco->Complemento);
+    printf("Complemento: %s",endereco->Complemento);
     printf("\n");
     printf("Tipo de conta: %s\n",conta->tipo);
     printf("Numero da conta: %d\n",conta->numero);
     printf("Saldo: %.2lf\n", conta->saldo);
     printf("ano de abertura da conta: %d\n",conta->ano);
-
+    printf("**********************************************************\n");
+    printf("\n");
 }
 void Saque(ContaBancaria* conta){
     double saq;
@@ -105,7 +107,7 @@ void Emprestimo(ContaBancaria* conta){
     printf("Valor de emprestimo: ");
     scanf("%lf",&empr);
     (*conta).saldo+=empr;
-    printf("Emprestimo realizado com sucesso!");
+    printf("Emprestimo realizado com sucesso!\n");
     }
 }
 int Avalia(ContaBancaria* conta){
