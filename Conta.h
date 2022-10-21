@@ -14,7 +14,6 @@ typedef struct{
     double emprestimo;
 }ContaBancaria;
 
-void Menu(ContaBancaria* conta1,Cliente* client1,EnderecoCliente* ende1);
 void Inicializa(ContaBancaria* conta, Cliente* client,EnderecoCliente* endereco);
 void Imprime(ContaBancaria* conta,Cliente* client,EnderecoCliente* endereco);
 void Deposito(ContaBancaria* conta);
